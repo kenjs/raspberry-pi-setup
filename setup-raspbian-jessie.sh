@@ -34,13 +34,13 @@ apt_get_install(){
 
 # setup dotfiles
 setup_dotfiles(){
-	sudo cp ./dotfiles/.bashrc ~/.bashrc
-	sudo cp ./dotfiles/config.txt /boot/config.txt
-	sudo cp ./dotfiles/lxpolkit.desktop /etc/xdg/autostart/lxpolkit.desktop
+	# sudo cp ./dotfiles/.bashrc ~/.bashrc
+	# sudo cp ./dotfiles/config.txt /boot/config.txt
+	# sudo cp ./dotfiles/lxpolkit.desktop /etc/xdg/autostart/lxpolkit.desktop
 
-	sudo cp ./dotfiles/vncboot /etc/init.d/vncboot
-	sudo update-rc.d -f lightdm remove
-	sudo update-rc.d vncboot defaults
+	# sudo cp ./dotfiles/vncboot /etc/init.d/vncboot
+	# sudo update-rc.d -f lightdm remove
+	# sudo update-rc.d vncboot defaults
 }
 
 START_TIME=`date +%s`
@@ -63,6 +63,6 @@ SS=`expr ${SS} % 60`
 echo "Total Time: ${HH}:${MM}:${SS} (h:m:s)"
 
 echo "Input password for vnc"
-sudo /etc/init.d/vncboot start
+# sudo /etc/init.d/vncboot start
 
 echo "Please reboot"
