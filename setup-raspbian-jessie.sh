@@ -50,7 +50,7 @@ cd `dirname $0`
 
 update_package
 apt_get_install
-setup_dotfiles
+# setup_dotfiles
 
 END_TIME=`date +%s`
 
