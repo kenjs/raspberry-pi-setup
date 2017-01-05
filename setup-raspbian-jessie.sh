@@ -62,7 +62,7 @@ SS=`expr ${SS} % 60`
 
 echo "Total Time: ${HH}:${MM}:${SS} (h:m:s)"
 
-echo "Input password for vnc"
+# echo "Input password for vnc"
 # sudo /etc/init.d/vncboot start
 
 echo "Please reboot"
